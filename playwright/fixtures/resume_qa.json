@@ -1,0 +1,40 @@
+[
+    {
+        "question": "What did Damodharan do at his most recent job at Altimetrik?",
+        "phrases": [
+            "Staff Engineer",
+            "Quality Engineering",
+            "Altimetrik",
+            "AI-driven testing"
+        ]
+    },
+    {
+        "question": "What tools has Damodharan used for API testing?",
+        "phrases": [
+            "Rest Assured",
+            "Postman",
+            "API testing"
+        ]
+    },
+    {
+        "question": "How much did productivity increase using GitHub Copilot in his project at Nasdaq?",
+        "phrases": [
+            "Productivity increased by 70%"
+        ]
+    },
+    {
+        "question": "What certifications does Damodharan hold?",
+        "phrases": [
+            "ISTQB",
+            "AWS certifications"
+        ]
+    },
+    {
+        "question": "What were Damodharan's job titles during his time at Siemens?",
+        "phrases": [
+            "Test Automation Engineer",
+            "Senior Test Automation Engineer",
+            "Lead Automation Engineer"
+        ]
+    }
+]

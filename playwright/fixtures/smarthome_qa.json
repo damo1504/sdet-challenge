@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the SmartHome Hub used for?",
+    "phrases": [
+      "connect and control various smart home appliances",
+      "lights, thermostats, and security cameras",
+      "remote access",
+      "voice control",
+      "manage up to 50 devices"
+    ]
+  },
+  {
+    "question": "How many devices can the SmartHome Hub support?",
+    "phrases": [
+      "50 devices"
+    ]
+  },
+  {
+    "question": "Which wireless protocols does the SmartHome Hub support?",
+    "phrases": [
+      "wi-fi",
+      "zigbee",
+      "bluetooth"
+    ]
+  },
+  {
+    "question": "What are the main features of the SmartHome Hub?",
+    "phrases": [
+      "voice control",
+      "remote access",
+      "energy usage monitoring",
+      "supports up to 50 devices",
+      "automatic firmware updates"
+    ]
+  },
+  {
+    "question": "What is the warranty period for the SmartHome Hub?",
+    "phrases": [
+      "2-year limited warranty"
+    ]
+  }
+]

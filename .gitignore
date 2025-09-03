@@ -1,0 +1,8 @@
+node_modules/
+.env
+/playwright/allure-results
+/playwright/allure-reports
+playwright/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

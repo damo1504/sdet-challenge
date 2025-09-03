@@ -1,0 +1,26 @@
+Product Name: SmartHome Hub
+
+Overview:
+The SmartHome Hub is an all-in-one device that connects and controls various smart home appliances such as lights, thermostats, and security cameras. It supports both Wi-Fi and Zigbee protocols.
+
+Key Features:
+- Voice control with built-in virtual assistant
+- Remote access via mobile app
+- Energy usage monitoring
+- Supports up to 50 devices
+- Automatic firmware updates
+
+Specifications:
+- Processor: Quad-core 1.5 GHz
+- Memory: 2GB RAM, 16GB Storage
+- Connectivity: Wi-Fi 802.11ac, Zigbee 3.0, Bluetooth 5.0
+- Power: 5V/2A USB-C
+
+Use Cases:
+- Turn on/off lights remotely
+- Monitor home security cameras from anywhere
+- Set schedules for thermostats
+- Receive alerts for unusual activity
+
+Warranty:
+The SmartHome Hub comes with a 2-year limited warranty.
