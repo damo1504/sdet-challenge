@@ -1,7 +1,7 @@
 node_modules/
 .env
 /playwright/allure-results
-/playwright/allure-reports
+/playwright/allure-report
 playwright/test-results/
 /playwright-report/
 /blob-report/

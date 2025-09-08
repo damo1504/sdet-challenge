@@ -1,10 +1,11 @@
 {
   "name": "tests",
   "version": "1.0.0",
-  "main": "index.js",
   "description": "Playwright E2E tests for RAG app",
+  "main": "index.js",
   "scripts": {
-    "test": "playwright test",
+    "test:install-pw": "npx playwright install --with-deps",
+    "test": "npx playwright test",
     "test:ci": "npx playwright test --reporter=line,allure-playwright",
     "report:allure": "npx allure generate --clean ./allure-results --output ./allure-report && npx allure open ./allure-report"
   },

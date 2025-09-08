@@ -4,26 +4,6 @@ This repository contains end-to-end tests for the `rag` application using Playwr
 
 ---
 
-## Quick Start
-
-Run all tests using Docker:
-
-```bash
-docker-compose build
-docker-compose up
-docker-compose run playwright-tests
-```
-
-Run tests locally without Docker:
-
-```bash
-npm install
-npx playwright install --with-deps
-npx playwright test
-```
-
----
-
 ## Prerequisites
 
 Before running the tests, make sure you have:
@@ -38,6 +18,32 @@ OPENAI_API_KEY=your_openai_api_key
 ```
 
 Do not commit the `.env` file to version control.
+
+---
+
+## Quick Start
+
+Run all tests using Docker:
+
+```bash
+git clone https://github.com/damo1504/sdet-challenge.git
+cd sdet-challenge/playwright
+docker-compose build
+docker-compose up
+docker-compose run playwright-tests
+cd playwright
+npm run report:allure
+```
+
+Run tests locally without Docker:
+
+```bash
+cd playwright
+npm install
+npm run test:install-pw
+npm run test:ci
+npm run report:allure
+```
 
 ---
 

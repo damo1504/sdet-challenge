@@ -23,7 +23,7 @@ services:
       - mongodbatlas
       - s3
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8000/" ]
+      test: [ "CMD", "curl", "-f", "http://app:8000/" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -62,11 +62,14 @@ services:
   playwright-tests:
     build:
       context: .
-      dockerfile: Dockerfile
-    working_dir: /app
+      dockerfile: ./playwright/Dockerfile
+    working_dir: /tests
     volumes:
-      - ./playwright/allure-results:/app/allure-results
-    command: [ "sh", "-c", "npx wait-on http://app:8000 && npx playwright test --workers=1" ]
+      - ./playwright/allure-results:/tests/allure-results
+    command: [ "sh", "-c", "npx wait-on http://app:8000 && npm run test:ci" ]
+    environment:
+      - BASE_URL=http://app:8000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     depends_on:
       app:
         condition: service_healthy

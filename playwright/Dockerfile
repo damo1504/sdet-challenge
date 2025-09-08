@@ -1,20 +1,13 @@
 FROM mcr.microsoft.com/playwright:v1.47.0-jammy
 
-# Set working directory
-WORKDIR /app
+WORKDIR /tests
 
-# Copy package files for dependency installation
-COPY package*.json ./
+COPY playwright/package*.json ./
 
-# Install dependencies
-RUN npm install -g npm@latest
 RUN npm install
 
-# Copy the rest of the project (tests, configs, etc.)
-COPY . .
+COPY playwright/ .
 
-# Install Playwright browsers
 RUN npx playwright install --with-deps
 
-# Default command (can be overridden in docker-compose)
-CMD ["npm", "run", "test:ci"]
+CMD ["sh", "-c", "npx wait-on http://app:8000 && npm run test:ci"]

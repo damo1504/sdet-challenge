@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import * as path from 'path';
 
-test('Show alert for unsupported file type upload', async ({ page }) => {
-    await page.goto('/');
+test('Show alert for unsupported file type upload', async ({ page, baseURL }) => {
+    await page.goto(baseURL!);
 
     page.once('dialog', async (dialog) => {
         expect(dialog.message()).toContain('Failed to upload file. Please try again.');
